@@ -1,0 +1,85 @@
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./private/scss/style.scss ***!
+  \******************************************************************************************************************/
+.ce-teamtable, .ce-teamrandomizer {
+  width: 60vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.ce-teamtable .btn, .ce-teamrandomizer .btn {
+  margin-top: 15px;
+}
+.ce-teamtable .content, .ce-teamrandomizer .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ce-teamtable:not(.ce-teamtable:first-child, .ce-teamrandomizer:first-child), .ce-teamrandomizer:not(.ce-teamtable:first-child, .ce-teamrandomizer:first-child) {
+  margin-top: 150px;
+}
+.ce-teamtable h2, .ce-teamrandomizer h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+.ce-teamtable .team, .ce-teamrandomizer .team {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  padding: 0 15px;
+}
+.ce-teamtable .team div.dead, .ce-teamrandomizer .team div.dead {
+  color: #FF2454;
+}
+.ce-teamtable .team div.dead img, .ce-teamrandomizer .team div.dead img {
+  filter: grayscale(1);
+}
+.ce-teamtable .team div:not(.dead), .ce-teamrandomizer .team div:not(.dead) {
+  color: #24AA54;
+}
+.ce-teamtable .team div, .ce-teamrandomizer .team div {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.ce-teamtable .team div img, .ce-teamrandomizer .team div img {
+  margin-right: 15px;
+}
+.ce-teamtable .json, .ce-teamrandomizer .json {
+  display: none;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", sans-serif;
+}
+body.dark-mode {
+  background-color: #111;
+}
+body.dark-mode * {
+  color: #FFF;
+}
+
+.page__main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.btn {
+  border: none;
+  background-color: #FF2454;
+  padding: 10px 40px;
+  transition: ease-in-out all 0.2s;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #941531;
+}

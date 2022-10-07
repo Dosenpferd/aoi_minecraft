@@ -1,0 +1,59 @@
+.ce-teamtable, .ce-teamrandomizer {
+  width: 60vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+  .btn {
+    margin-top: 15px;
+  }
+  
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &:not(&:first-child) {
+    margin-top: 150px;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .team {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    padding: 0 15px;
+
+    div.dead {
+      color: #FF2454;
+
+      img {
+        filter: grayscale(1);
+      }
+    }
+
+    div:not(.dead) {
+      color: #24AA54
+    }
+
+    div {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+  
+  .json {
+    display: none;
+  }
+}
