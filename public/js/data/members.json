@@ -21,7 +21,8 @@
   },
   {
     "name": "Elias",
-    "mc_name": "WolfPuc"
+    "mc_name": "WolfPuc",
+    "ignored": true
   },
   {
     "name": "Markus",
@@ -41,7 +42,7 @@
   },
   {
     "name": "Keller",
-    "mc_name": "",
+    "mc_name": "DragonBlood04",
     "ignored": true
   },
   {

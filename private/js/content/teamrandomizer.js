@@ -12,14 +12,18 @@ function randomizeTeams() {
   const tables = document.querySelectorAll(".ce-teamrandomizer .content");
   loadJson("./js/data/members.json", function (members) {
     tables.forEach(function (wrapper) {
+      wrapper.innerHTML = "";
       members.sort(() => Math.random() - 0.5);
-      let teamElements = wrapper.getElementsByClassName("team");
-
-      for (let i = 0; i < teamElements.length; i++) {
-        teamElements.item(i).innerHTML = "<h2>Team " + (i + 1) + "</h2>";
-      }
-
       let teamJson = [];
+
+      const teamAmount = document.querySelector(".ce-teamrandomizer .teamAmount input").value;
+      for (let i = 0; i < teamAmount; i++) {
+        let teamElement = document.createElement("div");
+        teamElement.className = "team";
+        teamElement.innerHTML = "<h2>Team " + (i + 1) + "</h2>"
+        wrapper.appendChild(teamElement);
+      }
+      const teamElements = wrapper.getElementsByClassName("team");
 
       let currentTeam = 0;
       members.forEach(function (member) {

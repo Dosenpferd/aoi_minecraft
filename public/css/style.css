@@ -7,46 +7,51 @@
   flex-flow: column;
   align-items: center;
 }
-.ce-teamtable .btn, .ce-teamrandomizer .btn {
-  margin-top: 15px;
+.ce-teamtable:not(.ce-teamtable:first-child, .ce-teamrandomizer:first-child), .ce-teamrandomizer:not(.ce-teamtable:first-child, .ce-teamrandomizer:first-child) {
+  margin-top: 150px;
 }
 .ce-teamtable .content, .ce-teamrandomizer .content {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-.ce-teamtable:not(.ce-teamtable:first-child, .ce-teamrandomizer:first-child), .ce-teamrandomizer:not(.ce-teamtable:first-child, .ce-teamrandomizer:first-child) {
-  margin-top: 150px;
-}
-.ce-teamtable h2, .ce-teamrandomizer h2 {
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
-}
-.ce-teamtable .team, .ce-teamrandomizer .team {
+.ce-teamtable .content .team, .ce-teamrandomizer .content .team {
   display: flex;
   flex-flow: column;
   align-items: start;
   padding: 0 15px;
 }
-.ce-teamtable .team div.dead, .ce-teamrandomizer .team div.dead {
+.ce-teamtable .content .team h2, .ce-teamrandomizer .content .team h2 {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-size: 40px;
+}
+.ce-teamtable .content .team div.dead, .ce-teamrandomizer .content .team div.dead {
   color: #FF2454;
 }
-.ce-teamtable .team div.dead img, .ce-teamrandomizer .team div.dead img {
+.ce-teamtable .content .team div.dead img, .ce-teamrandomizer .content .team div.dead img {
   filter: grayscale(1);
 }
-.ce-teamtable .team div:not(.dead), .ce-teamrandomizer .team div:not(.dead) {
+.ce-teamtable .content .team div:not(.dead), .ce-teamrandomizer .content .team div:not(.dead) {
   color: #24AA54;
 }
-.ce-teamtable .team div, .ce-teamrandomizer .team div {
+.ce-teamtable .content .team div, .ce-teamrandomizer .content .team div {
   font-size: 24px;
   display: flex;
   align-items: center;
 }
-.ce-teamtable .team div img, .ce-teamrandomizer .team div img {
+.ce-teamtable .content .team div img, .ce-teamrandomizer .content .team div img {
   margin-right: 15px;
 }
-.ce-teamtable .json, .ce-teamrandomizer .json {
+.ce-teamtable .footer, .ce-teamrandomizer .footer {
+  display: flex;
+  flex-flow: column;
+  margin-top: 30px;
+}
+.ce-teamtable .footer .btn, .ce-teamrandomizer .footer .btn {
+  margin-top: 15px;
+}
+.ce-teamtable .footer .json, .ce-teamrandomizer .footer .json {
   display: none;
 }
 
@@ -82,4 +87,40 @@ body.dark-mode * {
 }
 .btn:hover {
   background-color: #941531;
+}
+
+label {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+label input {
+  background-color: #FF2454;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 15px;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+}
+label input::-webkit-inner-spin-button, label input::-webkit-outer-spin-button {
+  appearance: none;
+}
+label input[type=number] {
+  margin: 0;
+}
+label .step {
+  background-color: #FF2454;
+  height: 100%;
+  padding: 0 15px;
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+label .step.step--down {
+  margin-left: 15px;
+  margin-right: 1px;
+}
+label .step.step--up {
+  margin-left: 1px;
 }

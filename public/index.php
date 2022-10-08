@@ -10,13 +10,16 @@
         <div class="content"></div>
       </div>
       <div class="ce-teamrandomizer">
-        <div class="content">
-          <div class="team"></div>
-          <div class="team"></div>
+        <div class="content"></div>
+        <div class="footer">
+          <label class="teamAmount">
+            Number of Teams
+            <input name="teamAmount" type="number" min="2" max="5" value="2">
+          </label>
+          <button class="btn" id="randomize">Randomize</button>
+          <button class="btn" id="save">Copy JSON to Clipboard</button>
+          <div class="json"></div>
         </div>
-        <button class="btn" id="randomize">Randomize</button>
-        <div class="json"></div>
-        <button class="btn" id="save">Copy JSON to Clipboard</button>
       </div>
     </div>
   </body>

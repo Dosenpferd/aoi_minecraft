@@ -33,8 +33,52 @@ body {
   cursor: pointer;
   font-size: 18px;
   color: #fff;
-  
+
   &:hover {
     background-color: #941531;
+  }
+}
+
+// Input
+
+label {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  
+  input {
+    background-color: #FF2454;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 15px;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      appearance: none;
+    }
+    
+    &[type=number] {
+      margin: 0;
+    }
+  }
+
+  .step {
+    background-color: #FF2454;
+    height: 100%;
+    padding: 0 15px;
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+    
+    &.step--down {
+      margin-left: 15px;
+      margin-right: 1px;
+    }
+    
+    &.step--up {
+      margin-left: 1px;
+    }
   }
 }
