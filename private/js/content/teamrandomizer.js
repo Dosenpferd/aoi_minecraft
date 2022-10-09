@@ -87,6 +87,9 @@ function loadJson(path, success) {
     }
   };
   xhttp.open("GET", path);
+  xhttp.setRequestHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+  xhttp.setRequestHeader("Pragma", "no-cache");
+  xhttp.setRequestHeader("Expires", "0");
   xhttp.send();
 }
 
