@@ -21,8 +21,7 @@
   },
   {
     "name": "Elias",
-    "mc_name": "WolfPuc",
-    "ignored": true
+    "mc_name": "None"
   },
   {
     "name": "Markus",
@@ -42,32 +41,26 @@
   },
   {
     "name": "Keller",
-    "mc_name": "DragonBlood04",
-    "ignored": true
+    "mc_name": "None"
   },
   {
     "name": "Delphine",
-    "mc_name": "",
-    "ignored": true
+    "mc_name": "None"
   },
   {
     "name": "Jonas",
-    "mc_name": "",
-    "ignored": true
+    "mc_name": "None"
   },
   {
     "name": "Nidi",
-    "mc_name": "",
-    "ignored": true
+    "mc_name": "None"
   },
   {
     "name": "Tobi",
-    "mc_name": "",
-    "ignored": true
+    "mc_name": "None"
   },
   {
     "name": "Emy",
-    "mc_name": "",
-    "ignored": true
+    "mc_name": "None"
   }
 ]
